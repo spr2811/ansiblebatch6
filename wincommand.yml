@@ -1,0 +1,6 @@
+- hosts: windows
+  tasks:
+  - name: execute command
+    win_command: whoami
+    register: output
+  - debug: msg="{{output.stdout}}"

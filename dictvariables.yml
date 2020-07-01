@@ -1,0 +1,11 @@
+- hosts: linux
+  vars:
+    training:
+      topic: ansible
+      trainer: sathish
+      lab: aws
+  tasks:
+  - name: print dict variable
+    debug: msg="{{ training.lab }}"
+  - name: print another way
+    debug: msg="{{ training['topic'] }}"

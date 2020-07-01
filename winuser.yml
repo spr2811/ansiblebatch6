@@ -1,0 +1,9 @@
+- hosts: windows
+  tasks:
+  - name: create test user
+    win_user:
+      name: testuser
+      password: User@1234
+      state: present
+      groups:
+        - administrators

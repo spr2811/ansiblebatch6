@@ -1,0 +1,8 @@
+- hosts: linux
+  vars:
+    http_port: 78
+  tasks:
+  - name: print host varaiable
+    debug: msg="http port no is {{ http_port }}"
+  - name: print host group varaiable
+    debug: msg="group port is {{ port }}"

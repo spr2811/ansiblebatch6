@@ -15,7 +15,7 @@
     when: ansible_os_family == "RedHat"
   - name: start apache on ubuntu
     service:
-      name: apache2
+      name: apache2t
       enabled: yes
       state: started
     when: ansible_os_family == "Debian"
